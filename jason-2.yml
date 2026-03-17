@@ -1,6 +1,6 @@
 ---
 - name: Simple Web Setup
-  hosts: localhost
+  hosts: all
   become: true
   tasks:
     - name: Install nginx
