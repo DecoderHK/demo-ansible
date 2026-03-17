@@ -1,13 +1,14 @@
 ---
-
 - name: Simple Web Setup
-
   hosts: web
-
   become: true
-
   gather_facts: false
-
   roles:
-
     - webserver
+
+- name: Deploy nginx site config
+  template:
+    src: site.conf.j2
+    dest: /etc/nginx/conf.d/site.conf
+  notify: restart nginx
+
