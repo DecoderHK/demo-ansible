@@ -1,9 +1,4 @@
 ---
-
-app_name: demoapp
-
 app_port: 8080
-
 nginx_listen_port: 80
-
 index_title: "Welcome to {{ app_name }}"
